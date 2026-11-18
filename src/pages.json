@@ -371,91 +371,71 @@
         {
           "tag": "div",
           "props": {
-            "className": "main-container"
+            "className": "main-container homepage-intro"
           },
           "children": [
-            "\n",
-            {
-              "tag": "h1",
-              "props": {},
-              "children": [
-                "Welcome to Our Research Group"
-              ]
-            },
-            "\n",
             {
               "tag": "div",
               "props": {
-                "className": "content-container"
+                "className": "homepage-intro-grid"
               },
               "children": [
-                " ",
-                "\n",
                 {
                   "tag": "div",
                   "props": {
-                    "className": "text-container"
+                    "className": "homepage-intro-lead"
                   },
                   "children": [
-                    "\n",
+                    {
+                      "tag": "h1",
+                      "props": {},
+                      "children": [
+                        "Understanding development, advancing regenerative medicine."
+                      ]
+                    },
                     {
                       "tag": "p",
                       "props": {},
                       "children": [
-                        "The Drukker lab, led by Prof. Dr. Micha Drukker, is dedicated to advancing stem cell biology,\n                        regenerative medicine, and disease modeling. We explore the fundamental mechanisms that govern\n                        embryonic tissue formation, leveraging induced pluripotent stem cells (iPSCs) to create\n                        innovative models for human disease and drug development, with a focus on neurodegeneration."
+                        "The Drukker lab, led by Prof. Dr. Micha Drukker, is dedicated to advancing stem cell biology, regenerative medicine, and disease modeling. We explore the fundamental mechanisms that govern embryonic tissue formation, leveraging induced pluripotent stem cells (iPSCs) to create innovative models for human disease and drug development, with a focus on neurodegeneration."
                       ]
-                    },
-                    "\n",
-                    {
-                      "tag": "p",
-                      "props": {},
-                      "children": [
-                        "Our research integrates transcriptional and epigenetic regulation, lncRNAs, membraneless\n                        organelles, and self-renewal mechanisms, using state-of-the-art techniques such as organoid\n                        technology, single-cell RNA sequencing, flow cytometry, and CRISPR-Cas9 genetic engineering."
-                      ]
-                    },
-                    "\n",
-                    {
-                      "tag": "p",
-                      "props": {},
-                      "children": [
-                        "We partner with scientists across disciplines within Leiden University and the Leiden University\n                        Medical Center (LUMC) to develop stem cell-based organoid models for drug discovery, toxicity\n                        testing, and alternatives to animal models. Additionally, we contribute to stem cell immunology\n                        and GMP manufacturing of iPSCs for clinical applications. Our lab also supports evolutionary\n                        developmental biology and de-extinction efforts by banking stem cells from exotic and endangered\n                        species."
-                      ]
-                    },
-                    "\n",
-                    {
-                      "tag": "p",
-                      "props": {},
-                      "children": [
-                        "Through a combination of basic and applied research, we aim to shape the future of living cell\n                        therapeutics—a new class of treatments that harness stem cells and immune cells to revolutionize\n                        medicine."
-                      ]
-                    },
-                    "\n"
+                    }
                   ]
                 },
-                "\n",
                 {
                   "tag": "div",
                   "props": {
-                    "className": "image-container"
+                    "className": "homepage-intro-detail"
                   },
                   "children": [
-                    "\n",
                     {
-                      "tag": "img",
-                      "props": {
-                        "src": "images/drukkerlab.png",
-                        "alt": "Drukker Lab",
-                        "className": "main-image"
-                      },
-                      "children": []
-                    },
-                    "\n"
+                      "tag": "p",
+                      "props": {},
+                      "children": [
+                        "Our research integrates transcriptional and epigenetic regulation, lncRNAs, membraneless organelles, and self-renewal mechanisms, using state-of-the-art techniques such as organoid technology, single-cell RNA sequencing, flow cytometry, and CRISPR-Cas9 genetic engineering. We partner with scientists across disciplines within Leiden University and the Leiden University Medical Center (LUMC) to develop stem cell-based organoid models for drug discovery, toxicity testing, and alternatives to animal models. Additionally, we contribute to stem cell immunology and GMP manufacturing of iPSCs for clinical applications. Our lab also supports evolutionary developmental biology and de-extinction efforts by banking stem cells from exotic and endangered species. Through a combination of basic and applied research, we aim to shape the future of living cell therapeutics—a new class of treatments that harness stem cells and immune cells to revolutionize medicine."
+                      ]
+                    }
                   ]
-                },
-                "\n"
+                }
               ]
             },
-            "\n"
+            {
+              "tag": "div",
+              "props": {
+                "className": "homepage-intro-photo"
+              },
+              "children": [
+                {
+                  "tag": "img",
+                  "props": {
+                    "src": "images/drukkerlab_cropped.png",
+                    "alt": "Drukker Lab",
+                    "className": "main-image"
+                  },
+                  "children": []
+                }
+              ]
+            }
           ]
         },
         {

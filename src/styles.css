@@ -759,3 +759,50 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   padding: 8px;
 }
+
+/* Homepage introduction: editorial two-column layout with full-width photo */
+.homepage-intro { padding: 46px 50px 44px; }
+.homepage-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 2.8fr);
+  gap: 36px;
+  align-items: start;
+}
+.homepage-intro .homepage-intro-lead h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(28px, 2.6vw, 34px);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  color: #061452;
+  text-align: left;
+  margin: 0 0 20px;
+}
+.homepage-intro .homepage-intro-lead p {
+  font-size: 18px;
+  line-height: 1.65;
+  margin: 0;
+  color: #24324a;
+}
+.homepage-intro .homepage-intro-detail p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0;
+  color: #344159;
+}
+.homepage-intro-photo { margin: 36px auto 0; max-width: 760px; }
+.homepage-intro-photo .main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .homepage-intro { padding: 28px 24px; }
+  .homepage-intro-grid { grid-template-columns: 1fr; gap: 24px; }
+  .homepage-intro .homepage-intro-lead h1 { font-size: clamp(27px, 6vw, 32px); margin-bottom: 18px; }
+  .homepage-intro .homepage-intro-lead p { font-size: 18px; }
+  .homepage-intro-photo { margin-top: 28px; }
+}
