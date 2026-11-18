@@ -13,7 +13,10 @@ function Header(){
  const [mobile,setMobile]=useState(false);
  const [projectOpen,setProjectOpen]=useState(false);
  return <header className="site-header"><div className="nav-inner">
-  <a className="brand" href="index.html"><img src="/images/leidenlogo.svg" alt="Leiden University"/><span>Drukker Research Group</span></a>
+  <a className="brand" href="index.html"><img
+  src={`${import.meta.env.BASE_URL}images/leidenlogo.svg`}
+  alt="Leiden University"
+/><span>Drukker Research Group</span></a>
   <nav className={'site-nav '+(mobile?'is-open':'')} aria-label="Main navigation">
    <a href="index.html">Home</a><a href="team.html">Research Group</a>
    <div className="nav-dropdown"><button aria-expanded={projectOpen} onClick={()=>setProjectOpen(v=>!v)}>Projects <span aria-hidden="true">⌄</span></button>
@@ -28,8 +31,13 @@ function ContentNode({node}){
  const {tag,props={},children=[]}=node;
  if(['header','footer','script','style','noscript'].includes(tag))return null;
  const attrs={...props};
- if(attrs.src?.startsWith('images/'))attrs.src='/'+attrs.src;
- if(attrs.href?.startsWith('images/'))attrs.href='/'+attrs.href;
+if (attrs.src?.startsWith('images/')) {
+  attrs.src = import.meta.env.BASE_URL + attrs.src;
+}
+
+if (attrs.href?.startsWith('images/')) {
+  attrs.href = import.meta.env.BASE_URL + attrs.href;
+}
  if(attrs.className==='mobile-nav'||attrs.className==='desktop-nav'||attrs.className==='header-container')return null;
  if(attrs.style && typeof attrs.style==='string')delete attrs.style;
  delete attrs.onclick;delete attrs.onClick;

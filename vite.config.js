@@ -1,2 +1,7 @@
 import { defineConfig } from 'vite';
-export default defineConfig({ base: '/', build: { rollupOptions: { input: Object.fromEntries(['index','team','templeton','axialsc','painless','contact','construction'].map(n=>[n, n+'.html'])) } } });
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/drukker-lab-website/',
+});
