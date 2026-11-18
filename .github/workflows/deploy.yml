@@ -23,8 +23,13 @@ jobs:
           node-version: 22
       - run: npm install
       - run: npm run build
+      - name: Generate HTML entry files
+        run: |
+          for page in team axialsc templeton painless contact; do
+            cp dist/index.html "dist/${page}.html"
+          done
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v
         with:
           path: dist
       - id: deployment
