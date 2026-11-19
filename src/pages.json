@@ -6044,9 +6044,6 @@
             "method": "POST"
           },
           "children": [
-            "\n",
-            " Replace with your Access Key ",
-            "\n",
             {
               "tag": "input",
               "props": {

@@ -822,3 +822,25 @@ h1, h2, h3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
+
+/* Contact form submit button */
+#contactForm button,
+#contactForm input[type="submit"] {
+  background-color: #061452;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 24px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+#contactForm button:hover,
+#contactForm input[type="submit"]:hover {
+  background-color: #16378a;
+}
