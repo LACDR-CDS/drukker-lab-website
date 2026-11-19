@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   --font-heading: 28px;
   --font-body: 16px;
   color:#24324a;
@@ -692,7 +694,7 @@ nav a {
 /* November 2026 refinements */
 /* All headings use the same typeface as the body. */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Larger desktop navigation. */
@@ -769,7 +771,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: start;
 }
 .homepage-intro .homepage-intro-lead h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: clamp(28px, 2.6vw, 34px);
   line-height: 1.16;
   letter-spacing: -0.025em;
@@ -805,4 +807,18 @@ h1, h2, h3, h4, h5, h6 {
   .homepage-intro .homepage-intro-lead h1 { font-size: clamp(27px, 6vw, 32px); margin-bottom: 18px; }
   .homepage-intro .homepage-intro-lead p { font-size: 18px; }
   .homepage-intro-photo { margin-top: 28px; }
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
